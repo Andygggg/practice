@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
     // vite config設置
     plugins: [vue()],
     publicDir: 'public',
-    base: '/github_pages/',
+    base: './',
     server: {
       open: true,
       https: false,
