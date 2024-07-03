@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
     // vite config設置
     plugins: [vue()],
     publicDir: 'public',
-    base: './',
+    base: '/github_pages/',
     server: {
       open: true,
       https: false,
@@ -23,8 +23,8 @@ export default defineConfig(({ mode }) => {
     preview: {
       open: true,
       https: false,
-      host: env.VITE_APP_HOST,
-      port: parseInt(env.VITE_APP_PORT),
+      // host: env.VITE_APP_HOST,
+      // port: parseInt(env.VITE_APP_PORT),
       proxy: null,
       cors: true,
     },
