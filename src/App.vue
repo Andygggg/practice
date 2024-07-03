@@ -1,11 +1,11 @@
 <template>
-  <RouterView />
+  123
 </template>
 
 <script setup>
 import { RouterView } from 'vue-router'
 </script>
 
-<style lang="scss">
+<!-- <style lang="scss">
 @import './assets/all';
-</style>
+</style> -->
