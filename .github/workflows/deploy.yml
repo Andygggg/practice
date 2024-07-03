@@ -22,8 +22,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build datepicker
+      - name: Build project
         run: yarn build
+
+      - name: List build directory
+        run: ls -la ./dist
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
@@ -43,6 +46,9 @@ jobs:
         with:
           name: production-files
           path: ./dist
+
+      - name: List downloaded files
+        run: ls -la ./dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
